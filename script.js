@@ -1,3 +1,13 @@
+function toggleAbout() {
+  const text = document.getElementById("aboutText");
+  const btn = document.getElementById("readMoreBtn");
+  if (!text || !btn) return;
+  const isExpanded = text.classList.contains("expanded");
+  text.classList.toggle("clamped", isExpanded);
+  text.classList.toggle("expanded", !isExpanded);
+  btn.textContent = isExpanded ? "Read More" : "Read Less";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   /** ------------ CONTACT FORM ------------ **/
   const form = document.getElementById("contactForm");
