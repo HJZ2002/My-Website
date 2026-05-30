@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
 </head>
 <body>
-  <!--header section-->
 <header class="header">
   <a href="#home" class="logo">My <span>Portfolio</span></a>
 
@@ -30,7 +29,6 @@
     <a href="#Contact-Me">Contact</a>
   </nav>
 </header>
-  <!-- Home -->
   <section class="home" id="home">
     <div class="home-content">
       <h1>Greetings👋 I’m <span>Hosea James Zacarias</span></h1>
@@ -54,28 +52,24 @@
     </div>
   </section>
 
-  <!-- About -->
   <section class="about" id="about">
     <div class="about-content">
       <h2>About<span></span></h2>
-      <p>A 4th year Computer Science Student studies and learning about how computer work and its program and behind of every code lies with meaning and a hard working person and responsibilty and socialized to other people and be able to grow and experience other types of tools especially for programming </p>
-      <div class="about-cta">
-        <a href="#more" class="gradient-btn read-more">ReadMore</a>
+      <p id="aboutText" class="about-text clamped">A Computer Science graduate who is passionate about making something tangible and meaningful on the web. Each piece of code written means something. I really like writing front end codes and exploring different aspects of web development. The feeling of taking a blank page and turning it into something useful and beautiful that can be enjoyed by others is something that I take joy in. I think great programs do not only mean following strict logical rules and programming syntaxes but having a deeper connection with the user behind the screen. I am always inspired by my constant thirst for knowledge and my passion for learning new languages and tools that help me stay relevant in this ever-changing environment. Moments spent debugging programs at night, trying to solve problems or creating solutions after days of work are something that keeps me interested in my field.</p>
+        <button class="gradient-btn read-more" id="readMoreBtn" onclick="toggleAbout()">Read More</button>
       </div>
     </div>
   </section>
 
-  <!-- Education + Interests -->
   <section class="edu-interest" id="Education">
     <div class="edu-interest-wrapper">
 
-      <!-- Education -->
       <div class="education-box">
         <h1 class="heading">My <span>Education</span></h2>
         <div class="edu-card">
           <i class='bx bxs-graduation'></i>
           <h4>BS in Computer Science</h4>
-          <p>Mapua Malayan Colleges Mindanao — 2022–Present</p>
+          <p>Mapua Malayan Colleges Mindanao 2022–2026</p>
 
           <div class="edu-logo">
             <img src="images/images.png" alt="School logo">
@@ -84,24 +78,24 @@
           <p>1st Year Dean’s Lister</p>
           <p>2nd Year Dean’s Lister</p>
           <p>3rd Year Dean’s Lister</p>
+          <p>Graduated 2026 — <span>Cum Laude</span></p>
         </div>
       </div>
 
-      <!-- Animated Arrow -->
       <div class="ei-arrow" aria-hidden="true">
       <i class='bx bx-down-arrow-alt'></i>
     </div>
 
-      <!-- Interests -->
       <div class="interest-box" id="Interest">
         <h1 class="heading">My <span>Interests</span></h2>
         <div class="interest-card">
           <i class='bx bx-bulb'></i>
           <h4>What I’m Into</h4>
           <ul class="interest-list">
+            <li>Frontend Development</li>
             <li>Web Development</li>
             <li>Software Development</li>
-            <li>Building Mobile Development</li>
+            <li>Mobile Application Development</li>
             <li>Game Development</li>
           </ul>
         </div>
@@ -110,11 +104,10 @@
     </div>
   </section>
 
-  <!-- Technical Skills -->
   <section class="skills" id="TechnicalSkills">
     <div class="skills-head">
       <h2>Technical <span>Skills</span></h2>
-      <p>Languages that I am familiar with</p>
+      <p>Programming Languages That I'am Familiar With </p>
     </div>
     <div class="skills-grid">
       <div class="skill-card"><i class="devicon-java-plain"></i><h4>Java</h4></div>
@@ -123,10 +116,10 @@
       <div class="skill-card"><i class="devicon-css3-plain"></i><h4>CSS</h4></div>
       <div class="skill-card"><i class="devicon-javascript-plain"></i><h4>JavaScript</h4></div>
       <div class="skill-card"><i class="devicon-python-plain"></i><h4>Python</h4></div>
+      <div class="skill-card"><i class="devicon-react-plain"></i><h4>React</h4></div>
     </div>
   </section>
 
-  <!-- Projects -->
   <section class="projects" id="Projects">
     <h2 class="heading">My <span>Projects</span></h2>
     <div class="projects-box">
@@ -188,7 +181,6 @@
     </div>
   </section>
 
-  <!-- Tools -->
   <section class="tools" id="ToolsPlatforms">
     <h2 class="heading">Tools & <span>Platforms</span></h2>
     <div class="tools-grid">
@@ -308,7 +300,6 @@
   </div>
 </div>
 
-  <!-- Contact -->
   <section class="contact" id="Contact-Me">
   <h2 class="heading">Any questions? <span>Message me</span></h2>
 
@@ -317,7 +308,6 @@
     <div class="contact-pill"><i class='bx bx-phone'></i><span>09661686469 / 09498225352</span></div>
   </div>
 
-  <!--Contact Form -->
   <form id="contactForm" class="contact-form contact-grid">
     <!-- spam honeypot -->
     <input type="text" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
@@ -343,7 +333,7 @@
 <button class="audio-toggle" id="bgmToggle" aria-label="Mute site music" title="Mute site music">
   <i class="bx bx-volume-full" aria-hidden="true"></i>
 </button>
-  <footer>All rights reserved © 2025</footer>
+  <footer>All rights reserved © 2026</footer>
   <script src="script.js"></script>
 </body>
 </html>
