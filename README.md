@@ -12,7 +12,7 @@
 
 ## 👋 About
 
-Hi, I'm **Hosea James Zacarias** — a Computer Science graduate (*Cum Laude, 2026*) from Mapúa Malayan Colleges Mindanao, based in Davao City, Philippines.
+Hi, I'm **Hosea James Zacarias** a Computer Science graduate (*Cum Laude, 2026*) from Mapúa Malayan Colleges Mindanao, based in Davao City, Philippines.
 
 This is my personal portfolio website where I share my projects, skills, and a little bit about myself.
 It's not perfect yet, but it's mine and I'm always working to make it better.
