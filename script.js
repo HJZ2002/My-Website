@@ -129,13 +129,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const menuIcon = document.getElementById("menu-icon");
 const navbar   = document.getElementById("primary-navigation");
+const header   = document.querySelector(".header");
+
+// Always position navbar flush below the header
+function updateNavbarTop() {
+  if (header && navbar && window.innerWidth <= 768) {
+    navbar.style.marginTop = header.getBoundingClientRect().height + "px";
+  } else if (navbar) {
+    navbar.style.marginTop = "";
+  }
+}
+updateNavbarTop();
+window.addEventListener("resize", updateNavbarTop);
 
 if (menuIcon && navbar) {
   let menuOpen = false;
-  let ignoreNextDocPointerDown = false; // hard guard for the very next tap
+  let ignoreNextDocPointerDown = false;
 
   const setOpen = (willOpen) => {
     menuOpen = willOpen;
+    updateNavbarTop();
 
     navbar.classList.toggle("active", willOpen);
     document.body.classList.toggle("menu-open", willOpen);
@@ -145,15 +158,17 @@ if (menuIcon && navbar) {
     menuIcon.setAttribute("aria-label", willOpen ? "Close menu" : "Open menu");
 
     if (willOpen) {
-      // Ignore the very next document pointerdown triggered by the same tap
+      // Use a timestamp so even a 0ms-delayed doc pointerdown is ignored
       ignoreNextDocPointerDown = true;
-      setTimeout(() => (ignoreNextDocPointerDown = false), 500); // safety window
+      // Reset after two animation frames — enough for the tap to fully settle
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        ignoreNextDocPointerDown = false;
+      }));
     }
   };
 
   // Toggle on icon — stop both pointerdown & click from bubbling
   const onIconPointerDown = (e) => {
-    e.preventDefault();
     e.stopPropagation();
     e.stopImmediatePropagation();
     setOpen(!menuOpen);

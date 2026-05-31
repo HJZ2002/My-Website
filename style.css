@@ -275,29 +275,47 @@ section {
   .header { padding: 2.4rem var(--container-x); }
   #menu-icon { display: block; }
 
-  /* turn navbar into a slide-down panel */
+  /* turn navbar into a dropdown panel — hidden by default */
   .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
+    position: fixed;
     left: 0;
-    padding: 1.6rem var(--container-x) 2.2rem;
-    display: grid;
-    gap: 1.6rem;
-    background: rgba(0,0,0,.85);
-    border-bottom: 1px solid rgba(234,88,12,.35);
-    transform-origin: top;
-    transform: scaleY(0);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform .25s ease, opacity .25s ease;
-    backdrop-filter: blur(8px);
+    right: 0;
+    top: 0;
+    margin-top: 8rem;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem;
+    background: rgba(10,10,10,0.98);
+    
+    box-shadow: 0 12px 28px rgba(0,0,0,.6);
+    border-bottom: 1px solid rgba(234,88,12,.3);
+    z-index: 9999;
+    pointer-events: auto;
+    backdrop-filter: blur(12px);
+  }
+
+  /* visible when hamburger is toggled */
+  .navbar.active {
+    display: flex;
+    animation: navDrop .18s ease-out;
+  }
+
+  @keyframes navDrop {
+    from { transform: translateY(-8px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
   }
 
   .navbar a {
     border-bottom: none;
-    padding: .6rem 0;
+    padding: .8rem 1rem;
+    border-radius: .6rem;
+    transition: background .15s ease;
   }
+  .navbar a:hover,
+  .navbar a:active { background: rgba(255,255,255,.06); }
+
+  body.menu-open { overflow: hidden; }
 
   .home {
     flex-direction: column-reverse;
@@ -1656,6 +1674,13 @@ section {
     transition: transform .25s ease, opacity .25s ease;
     backdrop-filter: blur(8px);
   }
+
+  /* FIX: reveal navbar when hamburger is toggled */
+  .navbar.active {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
  
   .navbar a {
     border-bottom: none;
@@ -3009,6 +3034,7 @@ ection { scroll-margin-top: 96px; }
 }
 .sound-consent.hide{ display:none; }
 
+/* Desktop: ensure hamburger hidden, navbar shown as flex row */
 @media (min-width: 769px) {
   #menu-icon { display: none; }
   .navbar {
@@ -3019,110 +3045,4 @@ ection { scroll-margin-top: 96px; }
     background: transparent;
     box-shadow: none;
   }
-}
-
-/* Mobile: hamburger visible, menu hidden by default */
-@media (max-width: 768px) {
-  #menu-icon {
-    display: inline-flex;
-    font-size: 2.6rem;
-    cursor: pointer;
-    line-height: 1;
-    color: var(--text-color);
-  }
-
-  .navbar {
-    position: fixed;
-    left: 1.6rem;
-    right: 1.6rem;
-    top: 72px; /* adjust to your header height */
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.2rem;
-    background: var(--second-bg-color, #101010);
-    border-radius: 1rem;
-    box-shadow: 0 12px 28px rgba(0,0,0,.35);
-    z-index: 9998;
-  }
-
-  .navbar a {
-    padding: .8rem 1rem;
-    border-radius: .6rem;
-    transition: background .15s ease;
-  }
-  .navbar a:active,
-  .navbar a:hover { background: rgba(255,255,255,.06); }
-
-  .navbar.active { 
-    display: flex; 
-    animation: navDrop .18s ease-out;
-  }
-
-  @keyframes navDrop {
-    from { transform: translateY(-8px); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
-  }
-
-  /* Optional: prevent body from scrolling when menu open */
-  body.menu-open { overflow: hidden; }
-}
-@media (max-width: 768px){
-  .navbar { will-change: transform, opacity; }
-}
-@media (max-width: 768px){
-  .navbar { display:none; /* other mobile styles... */ }
-  .navbar.active { display:flex; }
-}
-
-@media (max-width: 768px) {
-  /* show hamburger */
-  #menu-icon {
-    display: inline-flex;
-    font-size: 2.6rem;
-    cursor: pointer;
-    color: var(--text-color);
-    z-index: 9999;
-  }
-
-  /* hidden menu by default */
-  .navbar {
-    position: fixed;
-    left: 1.6rem;
-    right: 1.6rem;
-    top: 72px;
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.2rem;
-    background: var(--second-bg-color, #101010);
-    border-radius: 1rem;
-    box-shadow: 0 12px 28px rgba(0,0,0,.35);
-    z-index: 9998;
-    will-change: transform, opacity;
-  }
-
-  /* visible when active */
-  .navbar.active {
-    display: flex;
-    animation: navDrop .18s ease-out;
-    pointer-events: auto;
-  }
-
-  @keyframes navDrop {
-    from { transform: translateY(-8px); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
-  }
-
-  .navbar a {
-    padding: .8rem 1rem;
-    border-radius: .6rem;
-    transition: background .15s ease;
-  }
-  .navbar a:hover {
-    background: rgba(255,255,255,.06);
-  }
-
-  /* lock body scroll while menu open */
-  body.menu-open { overflow: hidden; }
 }
