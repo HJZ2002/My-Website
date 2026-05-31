@@ -2,7 +2,7 @@
 
 > A personal portfolio to showcase who I am, what I build, and where I'm headed.
 >
-> *Work in progress — will be continuously improved over time.*
+> *Work in progress will be continuously improved over time.*
 
 <br>
 
@@ -15,7 +15,7 @@
 Hi, I'm **Hosea James Zacarias** — a Computer Science graduate (*Cum Laude, 2026*) from Mapúa Malayan Colleges Mindanao, based in Davao City, Philippines.
 
 This is my personal portfolio website where I share my projects, skills, and a little bit about myself.
-It's not perfect yet, but it's mine — and I'm always working to make it better.
+It's not perfect yet, but it's mine and I'm always working to make it better.
 
 <br>
 
@@ -83,7 +83,7 @@ It's not perfect yet, but it's mine — and I'm always working to make it better
 
 This portfolio is a **living project**.
 
-I'll be improving the design, adding new projects, and refining the content as I grow as a developer.
+I'll be improving the design, adding new projects, and refining the content as I grow as a Frontend-Developer.
 
 Thanks for stopping by! 🙌
 
