@@ -35,9 +35,23 @@ It's not perfect yet, but it's mine and I'm always working to make it better.
 
 ## 🛠️ Built With
 
-&nbsp;&nbsp;&nbsp; ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-&nbsp; ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-&nbsp; ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+&nbsp;&nbsp;&nbsp; ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+&nbsp; ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+&nbsp; ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
+## 🚀 Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## 📦 Deploy to Netlify
+
+1. Connect your GitHub repo to [Netlify](https://www.netlify.com/)
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+4. Deploy — `netlify.toml` is already configured
 
 <br>
 
