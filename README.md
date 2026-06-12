@@ -25,7 +25,7 @@ It's not perfect yet, but it's mine and I'm always working to make it better.
 
 ## 🔗 Live Site
 
-👉 &nbsp; **[hjz2002.github.io/My-Website](https://hjz2002.github.io/My-Website/)**
+👉 &nbsp; **https://hoseajameszacariasportfolio.netlify.app**
 
 <br>
 
@@ -45,17 +45,6 @@ It's not perfect yet, but it's mine and I'm always working to make it better.
 npm install
 npm run dev
 ```
-
-## 📦 Deploy to Netlify
-
-1. Connect your GitHub repo to [Netlify](https://www.netlify.com/)
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Deploy — `netlify.toml` is already configured
-
-<br>
-
----
 
 <br>
 
