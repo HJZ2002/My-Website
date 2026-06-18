@@ -39,12 +39,6 @@ It's not perfect yet, but it's mine and I'm always working to make it better.
 &nbsp; ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 &nbsp; ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-## 🚀 Local Development
-
-```bash
-npm install
-npm run dev
-```
 
 <br>
 
