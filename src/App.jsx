@@ -1,3 +1,4 @@
+import ParticleBackground from './components/ParticleBackground';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -13,6 +14,7 @@ import AudioToggle from './components/AudioToggle';
 export default function App() {
   return (
     <>
+      <ParticleBackground />
       <Header />
       <main>
         <Home />
