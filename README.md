@@ -48,7 +48,7 @@ It's not perfect yet, but it's mine and I'm always working to make it better.
 
 | &nbsp; Project &nbsp; | &nbsp; Description &nbsp; | &nbsp; Tech Stack &nbsp; |
 |:---|:---|:---|
-| 🤖 &nbsp; **AutoVision** | AI-powered mobile app that estimates vehicle repair costs from photos | Android Studio · Java · AI/ML |
+| 🤖 &nbsp; **AutoVision** | Autovision app that estimates vehicle repair costs from live photos of damage sedan vehicles | Android Studio · Java · AI/ML |
 | 🎮 &nbsp; **TicTacToe AI** | Browser game with 3 AI difficulty levels (Easy, Normal, Hard) | JavaScript · HTML · CSS |
 | 🧩 &nbsp; **2048 Game** | Classic sliding puzzle with high-score tracking | JavaScript · HTML · CSS |
 | 🔐 &nbsp; **Login Page UI** | Modern login interface with social OAuth buttons | HTML · CSS |
