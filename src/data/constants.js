@@ -29,12 +29,15 @@ export const TOOLS = [
   { icon: 'devicon-github-original', name: 'GitHub' },
   { icon: 'devicon-vscode-plain', name: 'VS Code' },
   { icon: 'devicon-unity-original', name: 'Unity' },
+  { icon: 'devicon-figma-plain', name: 'Figma' },
+  { icon: 'devicon-canva-original', name: 'Canva' },
 ];
 
+
 export const INTERESTS = [
-  'Frontend Development',
-  'Web Development',
-  'Software Development',
-  'Mobile Application Development',
-  'Game Development',
+  '🚀 Frontend Development',
+  '🌐 Web Development',
+  '🧩 Software Development',
+  '📱 Mobile App Development',
+  '🎮 Game Development',
 ];

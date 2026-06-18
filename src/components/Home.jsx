@@ -20,7 +20,7 @@ export default function Home() {
         <motion.p {...fadeIn(0.3)}>
           The world of technology revolves around us and being able to understand this course means
           I am ready to spend my skills to the outside world and passion in programming and being a
-          Developer and Web-Developer — a lot of things I want to try in the real world and how it
+          Developer and Web-Developer a lot of things I want to try in the real world and how it
           really works and understanding its fundamentals and its concepts.
         </motion.p>
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
+import InterestChips from './InterestChips';
 import { INTERESTS } from '../data/constants';
 
 export default function Education() {
@@ -23,17 +24,18 @@ export default function Education() {
             <img src="/images/images.png" alt="School logo" loading="lazy" />
           </div>
           <ul className="ei-list">
-            <li>1st Year Dean&apos;s Lister</li>
-            <li>2nd Year Dean&apos;s Lister</li>
-            <li>3rd Year Dean&apos;s Lister</li>
+            <li>🏅 1st Year Dean&apos;s Lister</li>
+            <li>🏅 2nd Year Dean&apos;s Lister</li>
+            <li>🏅 3rd Year Dean&apos;s Lister</li>
             <li>
-              Graduated 2026 — <span>Cum Laude</span>
+              🎓 Graduated 2026
+              <span>Cum Laude</span>
             </li>
           </ul>
         </motion.div>
-       <div className="ei-connector" aria-hidden="true">
-  <span className="ei-pulse" />
-</div>
+        <div className="ei-connector" aria-hidden="true">
+          <span className="ei-pulse" />
+        </div>
         <motion.div
           className="ei-card interest-card"
           id="Interest"
@@ -47,11 +49,7 @@ export default function Education() {
             <i className="bx bx-bulb" />
           </div>
           <h4 className="ei-card__title">What I&apos;m Into</h4>
-          <ul className="interest-list">
-            {INTERESTS.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          <InterestChips interests={INTERESTS} />
         </motion.div>
       </div>
     </AnimatedSection>
