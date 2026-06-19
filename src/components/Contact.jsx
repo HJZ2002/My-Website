@@ -62,7 +62,7 @@ export default function Contact() {
         </div>
         <div className="contact-pill">
           <i className="bx bx-phone" />
-          <span>09661686469 / 09498225352</span>
+          <span>09498225352</span>
         </div>
       </div>
 

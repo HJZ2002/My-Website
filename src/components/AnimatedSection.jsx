@@ -22,7 +22,7 @@ export default function AnimatedSection({ children, className = '', delay = 0, i
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.05, margin: '0px 0px -100px 0px' }}
       transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
       variants={variants}
     >
@@ -43,7 +43,7 @@ export function StaggerContainer({ children, className = '', stagger = 0.08 }) {
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.02, margin: '0px 0px -100px 0px' }}
       variants={{
         hidden: {},
         visible: { transition: { staggerChildren: stagger } },

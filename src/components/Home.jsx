@@ -12,18 +12,17 @@ export default function Home() {
     <section className="home" id="home">
       <div className="home-content">
         <motion.h1 {...fadeIn(0.1)}>
-          Greetings👋 I&apos;m <span>Hosea James Zacarias</span>
+          Greetings 👋 I&apos;m <span>Hosea James Zacarias</span>
         </motion.h1>
         <motion.h3 {...fadeIn(0.2)}>
           I&apos;m a <span>Computer Science Student,</span>
         </motion.h3>
-        <motion.p {...fadeIn(0.3)}>
-          The world of technology revolves around us and being able to understand this course means
-          I am ready to spend my skills to the outside world and passion in programming and being a
-          Developer and Web-Developer a lot of things I want to try in the real world and how it
-          really works and understanding its fundamentals and its concepts.
-        </motion.p>
-
+     <motion.p {...fadeIn(0.3)}>
+  I love turning a blank page into something useful and real projects that work,
+  that solve problems and that people enjoy using. As a Computer Science student,
+  I'm constantly exploring new languages and tools, and I'm excited to bring that
+  curiosity to building software for the real world.
+</motion.p>
         <motion.div className="social-icons" {...fadeIn(0.4)}>
           {SOCIAL_LINKS.map((link) => (
             <a
@@ -55,7 +54,7 @@ export default function Home() {
           src="/images/Avatar.jpg"
           alt="Hosea James Zacarias"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
         />

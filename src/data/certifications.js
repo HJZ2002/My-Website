@@ -90,11 +90,6 @@ export const CERTIFICATIONS = [
     issuer: 'LinkedIn Learning · Mar 2024',
   },
   {
-    title: 'Introduction to Generative AI with GPT',
-    image: '/images/cert/Cert9.png',
-    issuer: 'LinkedIn Learning · Mar 2024',
-  },
-  {
     title: 'Introduction to Large Language Models',
     image: '/images/cert/Cert10.png',
     issuer: 'LinkedIn Learning · Mar 2024',

@@ -9,8 +9,8 @@ export default function Certifications() {
         Certifications<span />
       </h2>
       <StaggerContainer className="cert-grid">
-        {CERTIFICATIONS.map((cert) => (
-          <StaggerItem key={cert.title}>
+        {CERTIFICATIONS.map((cert, index) => (
+          <StaggerItem key={`${cert.title}-${index}`}>
             <motion.a
               href={cert.href || undefined}
               target={cert.href ? '_blank' : undefined}

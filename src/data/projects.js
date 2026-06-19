@@ -57,4 +57,9 @@ export const PROJECTS = [
     href: 'https://guessproject-rvmvetdrnp5anpdty5vsvt.streamlit.app/',
     description: 'A Python-based number guessing game with a live web UI built in Streamlit. Features 3 difficulty levels, a hot/cold radar, hints, progress bar, scoring, and session tracking.',
   },
+  {
+    title: 'ZeHR - Employee Management System',
+    image: '/images/ZeHR .png',
+    description: 'A full-stack HR management web app featuring an employee dashboard with headcount charts, hiring trends, employment status tracking, department filtering, and full CRUD operations.',
+  },
 ];
