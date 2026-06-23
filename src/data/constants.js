@@ -20,7 +20,6 @@ export const SKILLS = [
   { icon: 'devicon-css3-plain', name: 'CSS' },
   { icon: 'devicon-javascript-plain', name: 'JavaScript' },
   { icon: 'devicon-python-plain', name: 'Python' },
-  { icon: 'devicon-react-plain', name: 'React' },
   { icon: 'devicon-typescript-plain', name: 'TypeScript' },
 ];
 
@@ -33,9 +32,23 @@ export const TOOLS = [
   { icon: 'devicon-canva-original', name: 'Canva' },
 ];
 
+export const SERVERHOSTING = [
+  { image: '/images/logo/netlify.png', name: 'Netlify' },
+  { image: '/images/logo/vercel.png', name: 'Vercel' },
+];
+
+export const FRONTEND_FRAMEWORKS = [
+  { icon: 'devicon-react-plain', name: 'React' },
+  { image: '/images/logo/tailwind.png', name: 'Tailwind CSS' },
+  { image: '/images/logo/vite.png', name: 'Vite' },
+];
+
+export const BACKEND = [
+  { icon: 'devicon-nodejs-plain', name: 'Node.js' },
+  { image: '/images/logo/xampp.png', name: 'XAMPP' },
+];
 
 export const INTERESTS = [
-  '🚀 Frontend Development',
   '🌐 Web Development',
   '🧩 Software Development',
   '📱 Mobile App Development',
